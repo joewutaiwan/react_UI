@@ -1,0 +1,168 @@
+.Main {
+    width: 100%;
+    height: 100%;
+}
+
+.BtnRight {
+    position: absolute;
+    margin-top:310px;
+    margin-left: 510px;
+    z-index: 2;
+}
+
+.BtnLeft {
+    position: absolute;
+    margin-top:310px;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.PhotoTextLeft {
+	position:absolute;
+    width: 250px;
+    height: 250px;
+    margin-left: 135px;
+    margin-top:65px;
+}
+
+.PhotoTextRight {
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    margin-left: 135px;
+    margin-top:65px;
+}
+
+.CoverLeft {
+	position:absolute;
+    width: 580px;
+    height: 380px;
+    opacity :1;
+    clip: rect(0px,290px,380px,0px);
+}
+
+.CoverLeftDecrese {
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    clip: rect(0px,0px,380px,0px);
+    -webkit-animation-name: leftdecrese; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.6s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes leftdecrese {
+    0%   {clip: rect(0px,290px,380px,0px);}
+    50% {clip: rect(0px,0px,380px,0px);}
+}
+
+.CoverLeftIncrese {
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    clip: rect(0px,580px,380px,0px);
+    -webkit-animation-name: leftincrese; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.6s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes leftincrese {
+    0%   {
+        clip: rect(0px,290px,380px,0px);
+    }
+    50% {
+        clip: rect(0px,580px,380px,0px);
+    }
+    100% {
+        clip: rect(0px,580px,380px,0px);
+    }
+}
+
+.CoverLeftClose {
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    clip: rect(0px,0px,380px,0px);
+}
+
+.CoverLeftOpen {
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    opacity :0.3;
+    clip: rect(0px,580px,380px,0px);
+    -webkit-animation-name: shadow; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+.CoverRight {
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    clip: rect(0px,580px,380px,290px);
+}
+
+.CoverRightDecrese {
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    clip: rect(0px,580px,380px,580px);
+    -webkit-animation-name: rightdecrese; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.6s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes rightdecrese {
+    0%   {clip: rect(0px,580px,380px,290px);}
+    50%  {clip: rect(0px,580px,380px,580px);}
+}
+
+.CoverRightIncrese {
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    clip: rect(0px,580px,380px,0px);
+    -webkit-animation-name: rightincrese; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.6s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes rightincrese {
+    0%  {
+        clip: rect(0px,580px,380px,290px);
+    }
+    50% {
+        clip: rect(0px,580px,380px,0px);
+    }
+    100% {
+        clip: rect(0px,580px,380px,0px);
+    }
+}
+
+.CoverRightClose {
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    clip: rect(0px,0px,380px,0px);
+}
+
+.CoverRightOpen {
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    opacity :0.3;
+    clip: rect(0px,580px,380px,0px);
+    -webkit-animation-name: shadow; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes shadow {
+    0%  {
+        opacity :1;
+    }
+    100% {
+        opacity :0.3;
+    }
+}

@@ -1,0 +1,56 @@
+
+.DivBtn {
+	border-radius: 50%;
+	margin: 5px;
+	box-shadow: 0.7px 0.7px 1px #888888;
+	text-align: center;
+    background-color: red;
+
+}
+
+.DivBtnHover {
+ 	border-radius: 50%;
+ 	margin: 5px;
+ 	box-shadow: 1.5px 1.5px 2px #888888;
+ 	text-align: center;
+ 	cursor: pointer;
+
+}
+
+
+
+.ImgFront {
+	position:absolute;
+    -webkit-filter: invert(100%); filter: invert(100%);
+
+}
+
+.ImgFrontHover {
+	position:absolute;
+    clip: rect(0px,40px,40px,0px);
+    -webkit-filter: invert(100%); filter: invert(100%);
+    -webkit-animation-name: rotate; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+ @-webkit-keyframes rotate {
+    0%   {
+        clip: rect(10px,40px,40px,0px);
+    	}
+    20% {
+        clip: rect(20px,40px,40px,0px);
+        }
+    40% {
+        clip: rect(40px,40px,40px,0px);
+        }
+    60% {
+        clip: rect(20px,40px,40px,0px);
+        }
+    80% {
+        clip: rect(10px,40px,40px,0px);
+    	}
+    100% {
+        clip: rect(0px,40px,40px,0px);
+        }
+}

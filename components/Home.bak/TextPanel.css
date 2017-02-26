@@ -1,0 +1,45 @@
+.Main {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Text {
+    position:absolute;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.CoverLeft {
+
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    clip: rect(0px,290px,380px,0px);
+    opacity:0;
+    -webkit-animation-name: opacitybye; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+.CoverRight {
+
+    position:absolute;
+    width: 580px;
+    height: 380px;
+    clip: rect(0px,580px,380px,290px);
+    opacity:0;
+    -webkit-animation-name: opacitybye; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes opacitybye {
+    from {opacity :1
+    }
+    to {opacity :0
+    }
+}

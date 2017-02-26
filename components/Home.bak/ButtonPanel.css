@@ -1,0 +1,58 @@
+.Main {
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/joeselfice.JPG");
+    background-size: 100% 100%;
+}
+
+.Mask{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.Mask:hover {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.Btn1 {
+    float: left;
+    margin-left: 190px;
+    margin-top: 190px;
+
+}
+
+.Btn2 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 190px;
+
+}
+
+
+.Btn3 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 190px;
+
+
+}
+
+
+.Cover {
+    width: 100%;
+    height: 100%;
+
+}
+
+@-webkit-keyframes movetop {
+    0%   {margin-top: 190px;}
+    10%  {margin-top: 185px;}
+    30%  {margin-top: 190px;}
+    50%  {margin-top: 185px;}
+    100% {margin-top: 190px;}
+}

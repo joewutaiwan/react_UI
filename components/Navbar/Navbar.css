@@ -1,0 +1,69 @@
+
+.Navbar {
+	background: #222;
+    color: #fafafa;
+    position: fixed;
+    top: 10px;
+    height: 50px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    width: 100%;
+    z-index: 100;
+}
+
+.NavbarWraper {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.NavbarFrame {
+	margin: 0;
+    display: inline;
+    text-align: -webkit-match-parent;
+}
+
+.DivDeactive {
+	background: #222;
+	font-size: 28px;
+    padding: 0 40px;
+    line-height: 50px;
+    float:left;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 10%;
+    
+}
+
+.DivActive {
+    background-color: #444444;
+    font-size: 28px;
+    height: 56px;
+    padding: 0 40px;
+    line-height: 50px;
+    float:left;
+    cursor: default;
+    border-bottom-color: #FFD700;
+    border-bottom-style:solid;
+    border-bottom-width: 6px;
+}
+
+.AnchorActive {
+    font-size: 28px;
+    text-decoration: none;
+    color: #00d8ff;
+}
+
+.AnchorDeactive {
+    font-size: 28px;
+    text-decoration: none;
+    color: #f0f0f0;
+    //color: red;
+}
+
+.AnchorDeactive:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}

@@ -1,0 +1,128 @@
+
+.Navbar {
+    z-index: 20;
+	background: black;
+    position: fixed;
+    top: 0px;
+    height: 80px;
+    //box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.NavbarWraper {
+    width: 800px;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 15px auto;
+}
+
+.DivWraper {
+    margin: 0 auto 10px;
+    height: 50px;
+    width: 140px;
+    float:left;
+    background: transparent; 
+
+}
+
+.NavbarFrame {
+	margin: 0;
+    display: inline;
+    text-align: -webkit-match-parent;
+}
+
+.DivDeactive {
+	//background: #222;
+    position:absolute;
+    line-height: 50px;
+    width: 140px;
+    height: 46px;
+    padding: 0 40px;
+}
+
+.DivActive {
+    position:absolute;
+    width: 140px;
+    height: 46px;
+    line-height: 50px;
+    padding: 0 40px;
+    float:left;
+    //background: white;
+}
+
+
+.DivBarDeactive {
+    position:absolute;
+    //width: 0px;
+    clip: rect(0px, 0px, 50px, 0px);  
+    height: 50px;
+}
+
+.DivBarActive {
+    position:absolute;
+    width: 140px;
+    height: 50px;
+    float:left;
+    background: red;
+    cursor: default;
+    -webkit-animation-name: bordermove; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes bordermove {
+    0%   {
+        clip: rect(0px, 70px, 50px, 70px);  
+    }
+    20%  {
+        clip: rect(0px, 100px, 50px, 40px);        
+    }
+    30%  {
+        clip: rect(0px, 120px, 50px, 20px);  
+    }
+    40%  {
+        clip: rect(0px, 140px, 50px, 0px);  
+    }
+    50%  {
+        clip: rect(0px, 120px, 50px, 20px);  
+    }
+    60%  {
+        clip: rect(0px, 140px, 50px, 0px);  
+    }
+    70%  {
+        clip: rect(0px, 120px, 50px, 20px);  
+    }
+    80%  {
+        clip: rect(0px, 140px, 50px, 0px);  
+    }
+    90%  {
+        clip: rect(0px, 120px, 50px, 20px);  
+    }
+    100% {
+        clip: rect(0px, 140px, 50px, 0px);  
+    }
+}
+
+
+.AnchorActive {
+    font-size: 22px;
+    cursor: default;
+    text-decoration: none;
+    color: white;
+}
+
+.AnchorDeactive {
+    font-size: 22px;
+    text-decoration: none;
+    color: #E8E8E8;
+}
+
+.AnchorDeactive:hover {
+    text-decoration: none;
+    color:  white;
+
+}

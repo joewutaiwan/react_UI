@@ -1,0 +1,27 @@
+.Home-Console {
+    width: 60em;
+    padding: 1em 1.5em;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes caret {
+    50% { border-right-color: transparent; }
+}
+
+.Home-Msg {
+    font: bold 200% Consolas, Monaco, monospace;
+    width: 25em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .2em solid;
+    animation: typing 8s steps(45),
+               caret 1s steps(1) infinite;
+}

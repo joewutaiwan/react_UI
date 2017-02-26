@@ -1,0 +1,90 @@
+
+.DivBtn {
+	border-radius: 50%;
+	margin: 5px;
+	//box-shadow: 1.5px 1.5px 4px #888888;
+	text-align: center;
+
+}
+
+.DivBtnHover {
+ 	border-radius: 50%;
+ 	margin: 5px;
+ 	//box-shadow: 3px 3px 8px #888888;
+ 	text-align: center;
+ 	cursor: pointer;
+
+}
+
+
+
+.ImgFront {
+	position:absolute;
+    visibility: visible;
+    -webkit-filter: invert(100%); filter: invert(100%);
+
+}
+
+.ImgFrontHover {
+	position:absolute;
+    visibility: hidden;
+    -webkit-filter: invert(100%); filter: invert(100%);
+    -webkit-animation-name: rotate; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.1s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+ @-webkit-keyframes rotate {
+    0%   {transform: rotate(0deg);
+    	visibility: visible;}
+    100% {transform: rotate(90deg);
+    	visibility: visible;}
+}
+
+
+.ImgBack {
+	position:absolute;
+    visibility: hidden;
+    -webkit-filter: invert(100%); filter: invert(100%);
+
+}
+
+.ImgBackHover {
+	position:absolute;
+    visibility: visible;
+    -webkit-filter: invert(100%); filter: invert(100%);
+    -webkit-animation-name: show; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.1s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+ @-webkit-keyframes show {
+    0%   {visibility: hidden;}
+    100% {visibility: hidden;}
+}
+
+.PName {
+	position:absolute;
+	height: 40px;
+    width: 40px; 
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+
+
+}
+
+.PNameHover {
+	position:absolute;
+	height: 40px;
+    width: 40px; 
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+    -webkit-animation-name: rotate; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.2s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+ 	
+

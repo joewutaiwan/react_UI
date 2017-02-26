@@ -1,0 +1,22 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+}
+.Wraper {
+    width: 960px;
+    height: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Content {
+    margin-top: 6em;
+
+}

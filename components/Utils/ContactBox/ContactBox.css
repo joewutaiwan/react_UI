@@ -1,0 +1,123 @@
+.Line1 {
+    height: 60PX;
+    background-color: yellow;
+
+}
+
+.Btn1Detail{
+    height: 40PX;
+    background-color: red;
+    margin-left: 60px;
+}
+
+.Line2 {
+    height: 60PX;
+    background-color: green;
+    
+}
+
+.Btn2Detail{
+    height: 40PX;
+    background-color: red;
+    margin-left: 60px;
+}
+
+.Line3 {
+    height: 60PX;
+    background-color: gray;
+    
+}
+
+.Btn3Detail{
+    height: 40PX;
+    background-color: red;
+    margin-left: 60px;
+}
+
+.Btn1Init {
+    position:absolute;
+    top: 0px;
+    margin-left: 100px;
+    margin-top: 65px;
+
+}
+.Btn2Init {
+    position:absolute;
+    top: 0px;
+    margin-left: 105px;
+    margin-top: 70px;
+    
+
+}
+.Btn3Init {
+    position:absolute;
+    top: 0px;
+    margin-left: 110px;
+    margin-top: 75px;
+
+}
+
+.Btn1Final {
+    position:absolute;
+    top: 0px;
+    margin-left: 10px;
+    margin-top: 0px;
+    -webkit-animation-name: btn1move; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.1s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes btn1move {
+    0%   {
+        margin-left: 100px;
+        margin-top: 65px;
+    }
+    100% {
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+}
+
+.Btn2Final {
+    position:absolute;
+    top: 0px;
+    margin-left: 10px;
+    margin-top: 60px;
+    -webkit-animation-name: btn2move; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.1s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+    
+}
+
+@-webkit-keyframes btn2move {
+    0%   {
+        margin-left: 105px;
+       margin-top: 70px;
+    }
+    100% {
+        margin-left: 10px;
+    margin-top: 60px;   
+    }
+}
+
+.Btn3Final {
+    position:absolute;
+    top: 0px;
+    margin-left: 10px;
+    margin-top: 120px;
+    -webkit-animation-name: btn3move; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.1s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+
+}
+
+@-webkit-keyframes btn3move {
+    0%   {
+        margin-left: 110px;
+    margin-top: 75px;
+    }
+    100% {
+        margin-left: 10px;
+    margin-top: 120px;
+    }
+}

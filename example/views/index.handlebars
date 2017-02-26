@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>redux-simple-router example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="/stylesheet/framework.css">
+  <link rel="stylesheet" href="/stylesheet/home.css">
+  <link rel="stylesheet" href="dist/app.css">
+  
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+    .centered-text {
+      text-align: center;
+    }
+
+    .page img {
+      display: block;
+      margin: auto;
+    }
+
+    .active {
+      color: black;
+    }
+  </style>
+  <script>
+    {{#if devTools}}
+      window.__DEVTOOLS = true;
+    {{^}}
+      window.__DEVTOOLS = false;
+    {{/if}}
+  </script>
+</head>
+<body>
+  <div id="mount"></div>
+</body>
+<script src="dist/bundle.js"></script>
+</html>
