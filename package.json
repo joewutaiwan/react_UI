@@ -5,20 +5,23 @@
   "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"node dev/dev_server.js",
+    "dev": "node dev/dev_server.js",
     "build_webpack": "webpack --progress --colors",
     "start": "npm run build_webpack && node example/server.js"
   },
   "author": "Free Wortley <jw@freeqaz.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.16.1",
     "history": "^1.13.1",
+    "mongodb": "^2.2.24",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-redux": "^4.0.0",
     "react-router": "^1.0.0",
     "redux": "^3.0.4",
     "redux-simple-router": "0.0.8",
+    "throw.js": "^3.0.1",
     "xtend": "^4.0.1"
   },
   "devDependencies": {
